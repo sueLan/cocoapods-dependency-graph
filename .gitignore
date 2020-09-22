@@ -4,3 +4,4 @@ demo/DependencyGraphDemo/Pods/
 demo/DependencyGraphDemo/Podfile.lock
 demo/DependencyGraphDemo/DependencyGraphDemo.xcodeproj/project.xcworkspace/xcuserdata/zhengrongyan.xcuserdatad/UserInterfaceState.xcuserstate
 demo/DependencyGraphDemo/DependencyGraphDemo.xcodeproj/xcuserdata/zhengrongyan.xcuserdatad/xcschemes/xcschemema
+cocoapods-dependency-graph/*.gem
