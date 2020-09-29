@@ -1,6 +1,6 @@
 require 'fast_excel'
 
-module Generator 
+module Dependency 
   class DependencyExcel 
     attr_accessor :module_spec_hash 
 
@@ -13,13 +13,13 @@ module Generator
     end
 
     def create_title()
-      @worksheet << (["module name", "local", "source", "version", "homepage", "summary"], @workbook.bold_format)
+      @worksheet.append_row(["module name", "local", "source", "version", "homepage", "summary"], @workbook.bold_format)
     end
 
     def create_row(spec) 
       local = spec.local? if spec.source
       summary = spec.root.attributes_hash['summary']
-      worksheet << ([spec.module_name, local, spec.source, spec.version, spec.homepage, summary])
+      worksheet << [spec.module_name, local, spec.source, spec.version, spec.homepage, summary]
     end
 
     # @param [Array<Specification>] specs a list specification
@@ -39,7 +39,7 @@ module Generator
     def generate(umbrella_target, module_spec_hash)
       create_excel
       create_title
-      create_content
+      create_content(umbrella_target.specs)
       close_excel
     end 
   end
