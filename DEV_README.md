@@ -5,7 +5,7 @@
 
 2. change code 
 3. build gemspec
-   
+If you add a new file, make sure that file is added in git before building gemspec. 
 ```
 ~> cd cocoapods-dependency-graph
 ~> gem build cocoapods-dependency-graph.gemspec
