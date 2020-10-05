@@ -5,12 +5,16 @@
 
 2. change code 
 3. build gemspec
-If you add a new file, make sure that file is added in git before building gemspec. 
+3.1. If you add a new file, make sure that file is added in git before building. Because in the `gemspec`, we use 
+    ```
+    spec.files         = `git ls-files`.split($/)
+    ```
+Now, you can build the `cocoapods-dependency-graph`
 ```
 ~> cd cocoapods-dependency-graph
 ~> gem build cocoapods-dependency-graph.gemspec
 ```
-
+3.2. Go to  `~/.gem/ruby/${version}/gems/cocoapods-dependency-graph-0.0.1/lib/cocoapods-dependency-graph/`,  check if your file is packed into the plugin bundle. 
 4. install cocoapods-dependency-graph 
 
 ```
