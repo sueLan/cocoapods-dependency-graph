@@ -14,7 +14,8 @@ target 'DependencyGraphDemo' do
   pod 'RxCocoa', '~> 5'
   pod 'lottie-ios'
   pod 'SVProgressHUD'
-
+  pod 'Firebase/Analytics'
+  pod 'Reachability'
   target 'DependencyGraphDemoTests' do
     inherit! :search_paths
     # Pods for testing
