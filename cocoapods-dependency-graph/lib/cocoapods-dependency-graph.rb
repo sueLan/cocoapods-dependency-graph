@@ -18,10 +18,10 @@ module Dependency
       
       module_spec_hash = {}
       umbrella_target.specs.each { | spec |
-        module_spec_hash[spec.module_name] = spec
+        module_spec_hash[spec.name] = spec
       } 
 
-      excel_generator = DependencyExcel.new.generate(umbrella_target, module_spec_hash)
+      excel_generator = ExcelGenerator.new.generate(umbrella_target, module_spec_hash)
       
       puts "#{umbrella_target.platform_name}"
       puts "#{umbrella_target.platform_deployment_target}"  

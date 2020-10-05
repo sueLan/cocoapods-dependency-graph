@@ -1,15 +1,17 @@
 require 'fast_excel'
 
 module Dependency 
-  class DependencyExcel 
-    attr_accessor :module_spec_hash 
-
+  class ExcelGenerator
     attr_accessor :workbook
     attr_accessor :worksheet
   
-    def create_excel 
-      @workbook = FastExcel.open("cocoapods-dependency-list.xlsx", constant_memory: true)
+    def create_excel
+      filename = 'cocoapods-dependency-list.xlsx' 
+      File.delete(filename) if File.file?(filename)
+
+      @workbook = FastExcel.open(filename, constant_memory: true)
       @worksheet = workbook.add_worksheet("cocoapods-dependency-list")
+      @worksheet.auto_width = true
     end
 
     def create_title()
@@ -17,6 +19,7 @@ module Dependency
     end
 
     def create_row(spec) 
+      return unless spec.source
       local = spec.local? if spec.source
       summary = spec.root.attributes_hash['summary']
       worksheet << [spec.module_name, local, spec.source, spec.version, spec.homepage, summary]
