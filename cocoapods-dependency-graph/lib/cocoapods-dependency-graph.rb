@@ -2,6 +2,7 @@ require 'cocoapods-dependency-graph/gem_version'
 require 'cocoapods'
 require 'fileutils'
 require_relative 'cocoapods-dependency-graph/generator/excel-generator'
+require_relative 'cocoapods-dependency-graph/generator/json-generator'
 
 module Dependency
   class Graph
@@ -21,7 +22,8 @@ module Dependency
         module_spec_hash[spec.name] = spec
       } 
 
-      excel_generator = ExcelGenerator.new.generate(umbrella_target, module_spec_hash)
+      excel_generator = ExcelGenerator.new.generate(umbrella_target)
+      json_generator = JsonGenerator.new.generate(umbrella_target, module_spec_hash)
       
       puts "#{umbrella_target.platform_name}"
       puts "#{umbrella_target.platform_deployment_target}"  
