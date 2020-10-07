@@ -7,9 +7,11 @@ A Cocoapods plugin to create the dependency graph and help you manage dependenci
 ### Install Dependency 
     $ gem install rgl
 
-### Install Plugin
+### Build and Install Plugin
 
-    $ gem install cocoapods-dependency-graph
+    $ git clone git@github.com:sueLan/cocoapods-dependency-graph.git
+    $ cd cocoapods-dependency-graph
+    $ gem build cocoapods-dependency-graph.gemspec  && gem install cocoapods-dependency-graph  --user-install
 
 ## Usage 
 
