@@ -1,0 +1,1 @@
+[!] Your Podfile requires that the plugin `cocoapods-dependency-graph` be installed. Please install it and try installation again.

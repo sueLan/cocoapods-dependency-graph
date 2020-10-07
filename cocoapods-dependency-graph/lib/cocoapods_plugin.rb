@@ -1,5 +1,5 @@
 require 'cocoapods-dependency-graph/command'
-require_relative 'cocoapods-dependency-graph'
+require_relative 'cocoapods_dependency_graph'
 
 module Dependency
   # Register the post_install hook. The context is passed when running block 

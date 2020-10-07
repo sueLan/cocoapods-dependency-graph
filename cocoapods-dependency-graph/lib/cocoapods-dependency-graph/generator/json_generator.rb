@@ -3,14 +3,14 @@ require 'json'
 module Dependency 
   class JsonGenerator 
     # @param [Array<Specification>] specs a list specification
-    def create_hash(specs)
+    def create_hash(target_name, specs)
       dependencies = Array.new
       specs.each { | spec |
         next unless spec.source
         dependencies << SpecNode.new(spec).to_hash
       }
       
-      {:dependencies => dependencies}
+      {:target_name => dependencies}
     end
 
     def self.module_spec_hash 
@@ -22,7 +22,8 @@ module Dependency
     #
     def generate(umbrella_target, module_spec_hash)
       @@module_spec_hash = module_spec_hash
-      dependency_hash = create_hash(umbrella_target.specs)
+      target_name = umbrella_target.platform_deployment_target
+      dependency_hash = create_hash(target_name, umbrella_target.specs)
       # puts dependency_hash.to_json
       File.open("dependency_json.json","w") do |f|
         f.write(dependency_hash.to_json)

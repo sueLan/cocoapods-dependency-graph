@@ -1,8 +1,9 @@
 require 'cocoapods-dependency-graph/gem_version'
 require 'cocoapods'
 require 'fileutils'
-require_relative 'cocoapods-dependency-graph/generator/excel-generator'
-require_relative 'cocoapods-dependency-graph/generator/json-generator'
+require_relative 'cocoapods-dependency-graph/generator/excel_generator'
+require_relative 'cocoapods-dependency-graph/generator/json_generator'
+require_relative 'cocoapods-dependency-graph/generator/graph_generator'
 
 module Dependency
   class Graph
