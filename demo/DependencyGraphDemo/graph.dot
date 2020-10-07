@@ -1,7 +1,7 @@
 digraph RGL__DirectedAdjacencyGraph {
-    "{:target=>\"13.6\"}" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" [
         fontsize = 8,
-        label = "{:target=>\"13.6\"}"
+        label = "{:target=>\"Pods-DependencyGraphDemo\"}"
     ]
 
     "Alamofire (5.2.2)" [
@@ -79,63 +79,63 @@ digraph RGL__DirectedAdjacencyGraph {
         label = "lottie-ios (3.1.8)"
     ]
 
-    "{:target=>\"13.6\"}" -> "Alamofire (5.2.2)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "Alamofire (5.2.2)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "FirebaseAnalytics (6.8.3)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "FirebaseAnalytics (6.8.3)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "FirebaseCore (6.10.3)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "FirebaseCore (6.10.3)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "FirebaseCoreDiagnostics (1.7.0)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "FirebaseCoreDiagnostics (1.7.0)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "FirebaseInstallations (1.7.0)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "FirebaseInstallations (1.7.0)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "GoogleAppMeasurement (6.8.3)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "GoogleAppMeasurement (6.8.3)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "GoogleDataTransport (7.4.0)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "GoogleDataTransport (7.4.0)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "PromisesObjC (1.2.10)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "PromisesObjC (1.2.10)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "Reachability (3.2)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "Reachability (3.2)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "RxCocoa (5.1.1)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "RxCocoa (5.1.1)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "RxRelay (5.1.1)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "RxRelay (5.1.1)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "RxSwift (5.1.1)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "RxSwift (5.1.1)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "SVProgressHUD (2.2.5)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "SVProgressHUD (2.2.5)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "lottie-ios (3.1.8)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "lottie-ios (3.1.8)" [
         fontsize = 8
     ]
 
-    "{:target=>\"13.6\"}" -> "nanopb (1.30906.0)" [
+    "{:target=>\"Pods-DependencyGraphDemo\"}" -> "nanopb (1.30906.0)" [
         fontsize = 8
     ]
 

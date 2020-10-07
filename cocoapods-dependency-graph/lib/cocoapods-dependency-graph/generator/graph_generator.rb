@@ -30,7 +30,7 @@ module Dependency
     def generate(umbrella_target, module_spec_hash)
       @graph = RGL::DirectedAdjacencyGraph.new
       
-      target_name = umbrella_target.platform_deployment_target
+      target_name = umbrella_target.cocoapods_target_label
       root_node = {:target => target_name} 
       dfs_graph(root_node, umbrella_target.specs)
       

@@ -22,7 +22,7 @@ module Dependency
     #
     def generate(umbrella_target, module_spec_hash)
       @@module_spec_hash = module_spec_hash
-      target_name = umbrella_target.platform_deployment_target
+      target_name = umbrella_target.cocoapods_target_label
       dependency_hash = create_hash(target_name, umbrella_target.specs)
       # puts dependency_hash.to_json
       File.open("cocoapods_dependency_json.json","w") do |f|
