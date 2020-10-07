@@ -16,18 +16,15 @@ module Dependency
       end
 
       umbrella_target = umbrella_targets[0]
-      puts "***** TARGET #{umbrella_target.cocoapods_target_label}"
       
       module_spec_hash = {}
       umbrella_target.specs.each { | spec |
         module_spec_hash[spec.name] = spec
       } 
 
-      excel_generator = ExcelGenerator.new.generate(umbrella_target)
-      json_generator = JsonGenerator.new.generate(umbrella_target, module_spec_hash)
-      
-      puts "#{umbrella_target.platform_name}"
-      puts "#{umbrella_target.platform_deployment_target}"  
+      ExcelGenerator.new.generate(umbrella_target)
+      JsonGenerator.new.generate(umbrella_target, module_spec_hash)
+      GraphGenerator.new.generate(umbrella_target, module_spec_hash)      
     end
   end
 end

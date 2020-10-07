@@ -11,14 +11,14 @@ module Dependency
       spec.dependencies.each { | dependency |
         d_spec = JsonGenerator.module_spec_hash[dependency.name]
         next unless d_spec.source
-        dependencies << SpecNode.new(d_spec).to_hash
+        dependencies << d_spec 
       }
       dependencies
     end
 
     def dfs_graph(parent, specs) 
       specs.each { | spec |
-        next unsless spec.source
+        next unless spec.source
         @graph.add_edge(parent, spec)
         dfs_graph(spec, dependency_spces(spec))
       }
@@ -35,6 +35,7 @@ module Dependency
       dfs_graph(root_node, umbrella_target.specs)
       
       @graph.print_dotted_on
+      @graph.write_to_graphic_file('jpg')
     end
   end
 end

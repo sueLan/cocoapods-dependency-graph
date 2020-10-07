@@ -1,0 +1,197 @@
+digraph RGL__DirectedAdjacencyGraph {
+    "{:target=>\"13.6\"}" [
+        fontsize = 8,
+        label = "{:target=>\"13.6\"}"
+    ]
+
+    "Alamofire (5.2.2)" [
+        fontsize = 8,
+        label = "Alamofire (5.2.2)"
+    ]
+
+    "FirebaseAnalytics (6.8.3)" [
+        fontsize = 8,
+        label = "FirebaseAnalytics (6.8.3)"
+    ]
+
+    "FirebaseCore (6.10.3)" [
+        fontsize = 8,
+        label = "FirebaseCore (6.10.3)"
+    ]
+
+    "FirebaseCoreDiagnostics (1.7.0)" [
+        fontsize = 8,
+        label = "FirebaseCoreDiagnostics (1.7.0)"
+    ]
+
+    "GoogleDataTransport (7.4.0)" [
+        fontsize = 8,
+        label = "GoogleDataTransport (7.4.0)"
+    ]
+
+    "nanopb (1.30906.0)" [
+        fontsize = 8,
+        label = "nanopb (1.30906.0)"
+    ]
+
+    "FirebaseInstallations (1.7.0)" [
+        fontsize = 8,
+        label = "FirebaseInstallations (1.7.0)"
+    ]
+
+    "PromisesObjC (1.2.10)" [
+        fontsize = 8,
+        label = "PromisesObjC (1.2.10)"
+    ]
+
+    "GoogleAppMeasurement (6.8.3)" [
+        fontsize = 8,
+        label = "GoogleAppMeasurement (6.8.3)"
+    ]
+
+    "Reachability (3.2)" [
+        fontsize = 8,
+        label = "Reachability (3.2)"
+    ]
+
+    "RxCocoa (5.1.1)" [
+        fontsize = 8,
+        label = "RxCocoa (5.1.1)"
+    ]
+
+    "RxSwift (5.1.1)" [
+        fontsize = 8,
+        label = "RxSwift (5.1.1)"
+    ]
+
+    "RxRelay (5.1.1)" [
+        fontsize = 8,
+        label = "RxRelay (5.1.1)"
+    ]
+
+    "SVProgressHUD (2.2.5)" [
+        fontsize = 8,
+        label = "SVProgressHUD (2.2.5)"
+    ]
+
+    "lottie-ios (3.1.8)" [
+        fontsize = 8,
+        label = "lottie-ios (3.1.8)"
+    ]
+
+    "{:target=>\"13.6\"}" -> "Alamofire (5.2.2)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "FirebaseAnalytics (6.8.3)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "FirebaseCore (6.10.3)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "FirebaseCoreDiagnostics (1.7.0)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "FirebaseInstallations (1.7.0)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "GoogleAppMeasurement (6.8.3)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "GoogleDataTransport (7.4.0)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "PromisesObjC (1.2.10)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "Reachability (3.2)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "RxCocoa (5.1.1)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "RxRelay (5.1.1)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "RxSwift (5.1.1)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "SVProgressHUD (2.2.5)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "lottie-ios (3.1.8)" [
+        fontsize = 8
+    ]
+
+    "{:target=>\"13.6\"}" -> "nanopb (1.30906.0)" [
+        fontsize = 8
+    ]
+
+    "FirebaseAnalytics (6.8.3)" -> "FirebaseCore (6.10.3)" [
+        fontsize = 8
+    ]
+
+    "FirebaseAnalytics (6.8.3)" -> "FirebaseInstallations (1.7.0)" [
+        fontsize = 8
+    ]
+
+    "FirebaseAnalytics (6.8.3)" -> "GoogleAppMeasurement (6.8.3)" [
+        fontsize = 8
+    ]
+
+    "FirebaseAnalytics (6.8.3)" -> "nanopb (1.30906.0)" [
+        fontsize = 8
+    ]
+
+    "FirebaseCore (6.10.3)" -> "FirebaseCoreDiagnostics (1.7.0)" [
+        fontsize = 8
+    ]
+
+    "FirebaseCoreDiagnostics (1.7.0)" -> "GoogleDataTransport (7.4.0)" [
+        fontsize = 8
+    ]
+
+    "FirebaseCoreDiagnostics (1.7.0)" -> "nanopb (1.30906.0)" [
+        fontsize = 8
+    ]
+
+    "GoogleDataTransport (7.4.0)" -> "nanopb (1.30906.0)" [
+        fontsize = 8
+    ]
+
+    "FirebaseInstallations (1.7.0)" -> "FirebaseCore (6.10.3)" [
+        fontsize = 8
+    ]
+
+    "FirebaseInstallations (1.7.0)" -> "PromisesObjC (1.2.10)" [
+        fontsize = 8
+    ]
+
+    "GoogleAppMeasurement (6.8.3)" -> "nanopb (1.30906.0)" [
+        fontsize = 8
+    ]
+
+    "RxCocoa (5.1.1)" -> "RxSwift (5.1.1)" [
+        fontsize = 8
+    ]
+
+    "RxCocoa (5.1.1)" -> "RxRelay (5.1.1)" [
+        fontsize = 8
+    ]
+
+    "RxRelay (5.1.1)" -> "RxSwift (5.1.1)" [
+        fontsize = 8
+    ]
+}

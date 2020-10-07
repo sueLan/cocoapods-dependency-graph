@@ -6,7 +6,7 @@ module Dependency
     attr_accessor :worksheet
   
     def create_excel
-      filename = 'cocoapods-dependency-list.xlsx' 
+      filename = 'cocoapods_dependency_list.xlsx' 
       File.delete(filename) if File.file?(filename)
 
       @workbook = FastExcel.open(filename, constant_memory: true)
