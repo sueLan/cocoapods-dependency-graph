@@ -28,7 +28,19 @@ plugin 'cocoapods-dependency-graph'
 ```
 
 2. run `pod install` 
-3. find output files in the project folder
+3. output files in the project folder
+
+In the `Podfile`, you can define `dependency_output` to decide which kind of output file this plugin generates. 
+
+```
+dependency_output :json 
+dependency_output :excel
+dependency_output :graph
+```
+There are 3 symbols to control the output format. You can choose one of them. If you don't define `dependency_output`, by default, this plugin generates `graph.jpg` and `graph.dot`. 
+
+The following are output files you can generate: 
+
 - `dependency_json.json`: JSON file for dependencies. You can view the json in any JSON becauty tool you like. 
 
   <img src="README.assets/image-20201007205410006.png" alt="image-20201007205410006" style="zoom:50%;" />

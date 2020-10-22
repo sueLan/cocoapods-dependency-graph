@@ -3,13 +3,10 @@ require 'rgl/dot'
 
 module Dependency 
   class GraphGenerator 
-    @module_spec_hash
-    @graph
-    
     def dependency_spces(spec) 
       dependencies = []
       spec.dependencies.each { | dependency |
-        d_spec = JsonGenerator.module_spec_hash[dependency.name]
+        d_spec = @module_spec_hash[dependency.name]
         next unless d_spec.source
         dependencies << d_spec 
       }
@@ -29,7 +26,8 @@ module Dependency
     #
     def generate(umbrella_target, module_spec_hash)
       @graph = RGL::DirectedAdjacencyGraph.new
-      
+      @module_spec_hash = module_spec_hash
+       
       target_name = umbrella_target.cocoapods_target_label
       root_node = {:target => target_name} 
       dfs_graph(root_node, umbrella_target.specs)
