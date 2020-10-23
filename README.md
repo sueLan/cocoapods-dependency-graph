@@ -4,9 +4,6 @@ A Cocoapods plugin to create the dependency graph and help you manage dependenci
 
 
 ## Installation
-### Install Dependency 
-    $ gem install rgl
-
 ### Install 
 
 ```

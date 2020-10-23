@@ -20,7 +20,6 @@ module Pod
   class Podfile
     module DSL
       def dependency_output(output_symbol)
-        puts "read dependency_output #{output_symbol}"
         DSL.dependency_output_format = output_symbol 
       end
 
@@ -60,20 +59,16 @@ module Dependency
       
       init_output_hash
       output_key = Pod::Podfile::DSL.dependency_output_format
-      puts "#{output_key} key"
       output_key = Output::GRAPH unless output_key
     
-      puts "output key #{output_key}, #{@output_class_hash}"
       generator_string = @output_class_hash[output_key]
 
-      puts "gen #{generator_string}"
       unless generator_string 
         puts "The dependency_output should be one of #{Output::GRAPH}, #{Output::JSON}, and #{Output::EXCEL}"
         return 
       end
 
       generator_class = Object.const_get(generator_string)
-      puts "gener class #{generator_class}"
       generator_class.new.generate(umbrella_target,module_spec_hash)
     end
   end
