@@ -24,20 +24,14 @@ module Pod
         Longer description of cocoapods-dependency-graph.
       DESC
 
-      self.arguments = 'NAME'
+     # self.arguments = 'NAME'
 
       def initialize(argv)
-        @name = argv.shift_argument
+        #@name = argv.shift_argument
         super
-      end
-
-      def validate!
-        super
-        help! 'A Pod name is required.' unless @name
       end
 
       def run
-        UI.puts "Add your implementation for the cocoapods-dependency-graph plugin in #{__FILE__}"
       end
     end
   end

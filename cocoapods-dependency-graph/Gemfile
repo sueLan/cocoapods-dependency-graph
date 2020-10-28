@@ -3,8 +3,3 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in cocoapods-dependency-graph.gemspec
 gemspec
 
-group :development do
-  gem 'cocoapods'
-  gem 'rgl'
-  gem 'fast_excel'
-end
