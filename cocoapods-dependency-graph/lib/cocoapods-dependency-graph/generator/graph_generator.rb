@@ -33,7 +33,8 @@ module Dependency
       dfs_graph(root_node, umbrella_target.specs)
       
       @graph.print_dotted_on
-      @graph.write_to_graphic_file('jpg')
+      dot_file = "#{target_name}_dependency_graph"
+      @graph.write_to_graphic_file('png', dot_file)
     end
   end
 end

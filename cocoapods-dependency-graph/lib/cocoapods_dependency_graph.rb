@@ -49,9 +49,15 @@ module Dependency
       unless umbrella_targets.length() > 0
         puts "No target detected"
       end
-
-      umbrella_target = umbrella_targets[0]
       
+      umbrella_targets.each { |target| 
+        next if target.cocoapods_target_label.end_with?("Tests")
+        generate_graph_for_target(target)
+      }
+    end
+
+    # @param [UmbrellaTargetDescription] umbrella_target
+    def generate_graph_for_target(umbrella_target)
       module_spec_hash = {}
       umbrella_target.specs.each { | spec |
         module_spec_hash[spec.name] = spec

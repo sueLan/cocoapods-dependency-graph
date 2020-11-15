@@ -34,18 +34,18 @@ dependency_output :json
 dependency_output :excel
 dependency_output :graph
 ```
-There are 3 symbols to control the output format. You can choose one of them. If you don't define `dependency_output`, by default, this plugin generates `graph.jpg` and `graph.dot`. 
+There are 3 symbols to control the output format. You can choose one of them. If you don't define `dependency_output`, by default, this plugin generates `png` and `dot` file for dependency graph. 
 
 The following are output files you can generate: 
 
-- `dependency_json.json`: JSON file for dependencies. You can view the json in any JSON becauty tool you like. 
+- `#{target_label}_dependency_json.json`: JSON file for dependencies. You can view the json in any JSON becauty tool you like. 
 
   <img src="README.assets/image-20201007205410006.png" alt="image-20201007205410006" style="zoom:50%;" />
 
-- `graph.jpg`: A png picture shows the dependency graph
+- `#{target_label}_dependency_graph.png`: A png picture shows the dependency graph
 
   ![image-20201007213841235](README.assets/image-20201007213841235.png)
 
-- `graph.dot`: A dot file which represents the dependency graph. [A site](https://dreampuf.github.io/GraphvizOnline/) that can process the dot language.  Or you can use [Graphviz](https://www.graphviz.org/theory/)
+- `#{target_label}_dependency_graph.dot`: A dot file which represents the dependency graph. [A site](https://dreampuf.github.io/GraphvizOnline/) that can process the dot language.  Or you can use [Graphviz](https://www.graphviz.org/theory/)
 
-- `cocoapods-dependency-list.xlsx`: xlsx file for dependency list.  
+- `#{target_label}_dependency_list.xlsx`: xlsx file for dependency list.  

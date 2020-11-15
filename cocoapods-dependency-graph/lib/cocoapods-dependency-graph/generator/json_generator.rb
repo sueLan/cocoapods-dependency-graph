@@ -25,7 +25,7 @@ module Dependency
       target_name = umbrella_target.cocoapods_target_label
       dependency_hash = create_hash(target_name, umbrella_target.specs)
       # puts dependency_hash.to_json
-      File.open("cocoapods_dependency_json.json","w") do |f|
+      File.open("#{target_name}_dependency_json.json","w") do |f|
         f.write(dependency_hash.to_json)
       end
     end

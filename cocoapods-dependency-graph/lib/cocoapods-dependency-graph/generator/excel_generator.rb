@@ -5,8 +5,8 @@ module Dependency
     attr_accessor :workbook
     attr_accessor :worksheet
   
-    def create_excel
-      filename = 'cocoapods_dependency_list.xlsx' 
+    def create_excel(target_label)
+      filename = "#{target_label}_dependency_list.xlsx" 
       File.delete(filename) if File.file?(filename)
 
       @workbook = FastExcel.open(filename, constant_memory: true)
@@ -40,7 +40,7 @@ module Dependency
     # @param  [Hash{<String, Specification>}] module_spec_hash 
     #
     def generate(umbrella_target, module_spec_hash)
-      create_excel
+      create_excel(umbrella_target.cocoapods_target_label)
       create_title
       create_content(umbrella_target.specs)
       close_excel
