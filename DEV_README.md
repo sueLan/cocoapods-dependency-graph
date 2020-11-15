@@ -33,6 +33,7 @@ Now, you can build the `cocoapods-dependency-graph`
 1. update `VERSION` in `gem_version.rb` 
 2. build, `gem build cocoapods-dependency-graph.gemspec`. 
 3. publish, `gem push cocoapods-dependency-graph-#{version}.gem`   
+
 ### Doc for cocoapods 
 
 Check the doc and API in https://rubydoc.info/gems/cocoapods/Pod
